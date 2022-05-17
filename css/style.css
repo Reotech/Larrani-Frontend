@@ -1,0 +1,691 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+nav{
+    height:8vh;
+    background:white;
+    z-index: 3;
+}
+
+
+
+.logo {
+    position: absolute;
+    width: 150px;
+    align-items: center;
+    top: 2px;
+    left: 4%;
+    z-index: 2;
+  }
+
+nav.sticky{
+    box-shadow: 0px 1px 10px #999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-links {
+    float: right;
+height: 100%;
+margin-right: 56px;
+list-style: none;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.nav-links li {
+    display: inline-block;
+line-height: 60px;
+margin: 0 15px;
+}
+
+.nav-links li a {
+position: relative;
+padding: 5px 0;
+color: #4e4e51;
+font-family: poppins;
+font-size: 14px;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+/* home page css */
+.welcome{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    
+}
+
+.welcometext{
+    width: 50%;
+    height: 400px;
+    
+}
+.welcomeimg{
+    width: 50%;
+    height: 400px;
+    
+}
+
+.homeimg{
+    height: 370px;
+    width:80%;
+    padding-left: 20%;
+}
+
+h1{
+    font-size: 40px;
+    line-height: 42px;
+    padding-left: 10%;
+    padding-top: 13%;
+    padding-bottom: 3%;
+    font-family: poppins;
+}
+.paragraph{
+    font-size: 16px;
+    font-family: poppins;
+    padding-left: 10%;
+    color: #615f5f;
+}
+
+/* about us css */
+.aboutsection{
+    background: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin-top: 2%;
+}
+
+.about{
+
+    text-align: center;
+    align-items: center;
+    padding-left: 20%;
+    width: 50%;
+}
+
+.abouthead{
+    font-size: 35px;
+    font-family: poppins;
+}
+
+.abouttext{
+    font-size: 16px;
+    color: #615f5f;
+    line-height: 30px;
+    font-family: poppins;
+}
+
+
+/* what we offer css */
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.servicehead{
+    margin-left: 28%;
+    margin-top: -5%;
+    font-family: poppins;
+}
+.sec{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3%;
+    box-shadow: -10px 1px 20px #adadad;
+    margin: 1%;height: 420px;
+}
+
+.sec:hover{
+    transform:translateX(3px) translateY(3px);
+    transition: 0.7s;
+}
+
+.secimg{
+    width:80%;
+    height: 230px;
+    margin-bottom: 4%;
+}
+
+.sechead{
+    font-weight: bold;
+    font-family: poppins;
+}
+
+.sectext{
+    margin-top: 2%;
+    font-size: 15px;
+    color: #615f5f;
+    font-family: poppins;
+}
+
+/*industries we work with css*/
+.industrieshead{
+    margin-left: 35%;
+    font-size: 30px;
+    margin-top: 8%;
+    margin-bottom: 4%;
+    font-family: poppins;
+}
+.industries{
+    display: flex;
+}
+
+.wrap{
+    padding-left: 45%;
+    display: flex;
+    margin-bottom: 2%;
+    justify-items: center;
+    align-items: center;
+}
+
+.industriestxt{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h3{
+    margin-left: 15px;
+    font-size: 19px;
+    font-family: poppins;
+}
+
+.industriesimg{
+    width: 50%;
+}
+
+.iconic{
+    width:85px;
+    height:55px;
+}
+.theimg{
+    width:80%;
+    height:400px;
+    padding-left: 22%;
+}
+
+/* processes section css */
+.processhead{
+    font-size: 30px;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    text-align: center;
+    font-family: poppins;
+}
+.ourprocesses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/processbg.png");
+    
+
+}
+
+.wrapper{
+    width: 30%;display: flex;flex-direction: column;justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.processimg{
+    width:70%;
+    height:230px;
+    border: 2px solid #9357EB;
+    border-radius: 80%;
+}
+
+.divs{
+    height:85%;
+    width: 85%;
+ 
+}
+
+h4{
+    font-size: 20px;
+    margin-top: 2%;
+    font-family: poppins;
+}
+
+/* contact us section css */
+.contactsection{
+    margin-top: 10%;
+    background: url("../img/contactbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formhead{
+    color: white;
+    font-size: 26px;
+    font-family: poppins;margin-bottom: 2%;
+    
+}
+
+.inputs{
+    height: 140px;
+    width: 50%;
+    border: 1px solid #9357EB;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 1px 10px  #412866;
+    font-family: poppins;
+    font-size: 13px;
+    padding-left: 2%;
+}
+
+.projdesc{
+    margin-bottom: 3%;
+    width: 50%;
+    font-family: poppins;
+    padding-left: 2%;
+    height: 260px;
+    border: 1px solid #9357EB;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 1px 10px  #412866;
+}
+
+.inputs:focus, .projdesc:focus, .submitz:focus{
+    outline: none;
+    border: 1px solid #9357EB;
+    box-shadow: 0px 1px 10px  #412866;
+    
+}
+
+.formz{
+    padding-top:15% ;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0px 1px 10px  #412866;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitz{
+    background: #9357EB;
+    font-size: 18px;
+    color: white;
+    padding: 2%;
+    border: 1px solid #9357EB;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 1px 10px  #412866;
+    margin-bottom: 4%;
+}
+
+/* footer section css */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+}
+
+.divz{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1%;
+    justify-content: space-between;
+}
+.footerlogo{
+    width: 160px;
+    margin-left: 5%;
+}
+
+.socialmedia{
+    margin-right: 6%;
+}
+
+.iconz{
+    width: 30px;
+}
+.copyright{
+    display: flex;
+    width: 100%;
+    margin-top: 0.5%;
+    font-family: poppins;
+    font-size: 12px;
+}
+
+.thetext{
+    margin-left: 6%;
+    font-size: 17px;
+
+}
+
+.linez{
+    width: 90%;
+    background: grey;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+   .industrieshead{
+        margin-left: 27%;
+    }
+    
+    .servicehead{
+       margin-left: 20%;
+
+   }
+}
+
+
+
+@media screen and (max-width: 670px){
+    .line{
+        width: 30px;
+        height: 3px;
+        background: #9357EB;
+        margin: 5px;
+    }
+
+    nav{
+        position:relative;
+    }
+
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+    
+    .nav-links{
+        position:fixed;
+        padding-top:30%;
+        height: 100vh;
+        width: 100%;background:white;
+        text-align: center;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path:  circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path:  circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+ 
+    
+    .nav-links li{
+        display: block;
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.8s;
+    }
+    li.fade{
+        opacity: 1;
+    }
+
+    /*home section*/
+    .welcome{
+        flex-direction: column;
+    }
+    .welcometext{
+        width: 100%;
+        height: 360px;
+    }
+    .welcomeimg{
+        width: 100%;
+    }
+    
+    h1{
+        padding-left: 6%;
+    }
+
+    .paragraph{
+        padding-left: 6%;
+    }
+    /* about */
+    .aboutsection{
+        margin-top: 15%;
+    }
+
+    .about{
+        width: 70%;
+        padding-left: 15%;
+    }
+    
+    /*services*/
+    .servicehead{
+        margin-left: 20%;
+    }
+    .sec{
+        width: 70%;
+    }
+
+    /*industries we work with*/
+    .industrieshead{
+        margin-left: 20%;
+    }
+    .wrap{
+        padding-left: 20%;
+    }
+    .industriestxt{
+        width: 35%;
+    }
+    
+    .industriesimg{
+        width: 55%;
+    }
+    .theimg{
+        width: 90%;
+    }
+
+    /*Our processes*/
+    .wrapper{
+        width: 50%;
+        margin-bottom: 8%;
+    }
+
+    .processimg{
+        width: 80%;
+        height: 200px;
+    }
+
+    /*contact us*/
+    .contactsection{
+        height: 600px;
+    } 
+    .formz{
+        padding-top: 25%;
+        width:400px;
+    }
+}
+
+@media screen and (max-width: 625px){
+    .industries{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .industriestxt{
+        width: 90%;
+    }
+    
+    .industriesimg{
+        width: 90%;
+    }
+    .theimg{
+        padding-left: 10%;
+    }
+}
+@media screen and (max-width: 536px){
+    .servicehead{
+        margin-left: 17%;
+    }
+    
+    .industrieshead{
+        margin-left: 17%;
+    }
+    
+}
+@media screen and (max-width: 468px){
+    .welcomeimg{
+        margin-top: -10%;
+    }
+    
+    .servicehead{
+        font-size: 30px;
+        margin-left: 20%;
+    }
+    .industrieshead{
+        margin-top: 17%;
+        margin-left: 12%;
+        font-size: 26px;
+        margin-right: 7%;
+        text-align: center;
+    }
+    
+    
+
+    h3{
+        font-size: 16px;
+    }
+    
+    h4{
+        font-size: 17px;
+    }
+    h1{
+        font-size: 30px;
+        margin-right: 3%;
+        line-height: 39px;
+    }
+    .paragraph{
+        padding-right: 4%;
+        font-size: 15px;
+    }
+    .abouthead{
+        font-size: 33px;
+        margin-right: 3%;
+    }
+    .about{
+        width: 75%;
+    }
+    
+    .abouttext{
+        font-size: 15px;
+    }
+    
+    .processhead{
+        margin-top: 26%;
+    }
+    .contactsection{
+        height: 575px;
+    }
+    .formz{
+        padding-top: 35%;
+        width: 350px;
+    }
+    
+}
+
+
+@media screen and (max-width: 420px){
+    h1{
+        font-size: 28px;
+    }
+    
+    .sectext{
+        padding: 4%;
+        font-size: 14px;
+    }
+    
+    .processhead{
+        font-size: 26px;
+    }
+    
+    
+    h4{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 414px){
+    .footerlogo{
+        width: 150px;
+    }
+
+    .iconz{
+        width: 22px;
+    }
+  
+    .thetext{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:409px){
+    
+    .industrieshead{
+        font-size: 25px;
+       
+    }
+    .servicehead{
+        margin-left: 20%;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 356px){
+    .sectext{
+        font-size: 12px;
+    }
+    
+    .sec{
+        height: 425px;
+    }
+    
+}
+@media screen and (max-width: 320px){
+    .servicehead{
+        margin-top: 15%;
+    }
+    .contactsection{
+        height: 560px;
+    }
+
+    .formz{
+        width: 300px;
+    }
+}
